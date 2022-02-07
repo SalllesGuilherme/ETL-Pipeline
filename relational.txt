@@ -1,0 +1,35 @@
+Country
+-
+country_name text PK
+region text
+population number
+area number
+population_des number
+coastline number
+net_migration number
+infant_mortality number
+literacy number
+phones number
+arable number
+crops number
+other number
+climate number
+birthrate number
+deathrate number
+agriculture number
+industry number
+service number
+
+
+Score
+-
+country_name text FK >- Country.country_name [NN] [UK]
+happiness_rank number
+happiness_score number
+gdp money
+year date
+
+
+
+#Country (country_name, region, population, area, population_des, coastline, net_migration, infant_mortality, literacy, phones, arable, crops, other, climate, birthrate, deathrate, agriculture, industry, service)
+#Score (#country_name → Country [NN], gdp, happiness_score, year)
